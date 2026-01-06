@@ -243,6 +243,9 @@ nav,.nav-collapsed,
   width: fit-content;
 }
 
+.bnr-btn:hover{
+  background: #a2b691;
+}
 .bnr-btn > a{
     color: var(--heading-color);
 }
@@ -351,19 +354,20 @@ nav,.nav-collapsed,
 
 .our-mission-img{
     margin-right: auto;
-    position: relative;
+    
 }
 
 .mission-img1{
      max-width: 641px;
   margin: 0 auto;
+  position: relative;
 }
 
 .mission-img2{
      max-width: 326px;
    position: absolute;
        bottom: -56px;
-    right: -4px;
+    right: -23px;
 }
 
 .mission-img1> img{
@@ -426,12 +430,16 @@ footer{
     padding: 15px 23px;
 }
 
-.footer-btn{
+.button{
     background: var(--primary-color);
     color: var(--heading-color);
     padding: 20.5px 45px;
     border: none;
     border-radius: 60px;
+}
+
+.button:hover{
+  background: #a2b691;
 }
 
 .footer-items{
@@ -445,9 +453,18 @@ footer{
     color: #5E5E5E;
 }
 
+.footer-links:hover{
+  color: var(--primary-color);
+}
+
 .footer-icon{
     margin-top: 25px;
     margin-right: 36px;
+}
+
+.footer-icon:hover{
+  transform: scale(1.2);
+  transition: 1s linear;
 }
 
 .line{
@@ -466,6 +483,7 @@ footer{
 /* ==========
 RESPONSIVE 
 ============*/
+
 
 
 @media screen and (max-width: 1267px) {
@@ -523,6 +541,21 @@ RESPONSIVE
     }
 }
 
+@media screen and (max-width:1108px){
+         .col-7{
+          width: 100%;
+         }
+  .mission-img1{
+    max-width: 400px;
+  }
+  .mission-img2{
+         max-width: 200px;
+        bottom: -40px;
+        right: -30px;
+  }
+
+}
+
 @media screen and (max-width: 992px) {
  
   .col-5 {
@@ -552,12 +585,12 @@ RESPONSIVE
   }
   
   .mission-img1{
-    max-width: 500px;
+    max-width: 400px;
   }
   .mission-img2{
-            max-width: 200px;
-        bottom: -56px;
-        right: 2px;
+         max-width: 200px;
+        bottom: -40px;
+        right: -30px;
   }
 }
 
@@ -569,7 +602,14 @@ RESPONSIVE
     font-size: 7px;
     margin-block: 20px;
   }
-
+  .mission-img1{
+    max-width: 400px;
+  }
+  .mission-img2{
+         max-width: 200px;
+        bottom: -40px;
+        right: -23px;
+  }
  
 }
 @media screen and (max-width: 590px) {
